@@ -25,12 +25,8 @@ const listMenu = [
   },
 ];
 
-const Header = ({ initialBg }) => {
+const Header = () => {
   const [overlay, setOverlay] = useState(false);
-
-  const changes = {
-    initialBg: initialBg,
-  };
 
   const [fix, setFix] = useState(false);
   useEffect(() => {
@@ -53,7 +49,7 @@ const Header = ({ initialBg }) => {
         className={`top-0 w-full z-10 flex items-center text-white pr-4 pl-12 sm:pr-12 fixed transition-colors ${
           fix
             ? "sm:bg-[#E11F25] bg-[#E11F25]"
-            : `bg-[#E11F25] sm:${changes.initialBg}`
+            : `bg-[#E11F25] sm:bg-transparent`
         }`}
       >
         <div

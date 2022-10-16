@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header initialBg="bg-inherit" />
+      <Header />
       <VideoIntroductionSection />
       <main className="font-lato text-[1.05rem] leading-[1.4] text-[#444] ">
         <AboutSection />
