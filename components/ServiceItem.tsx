@@ -1,6 +1,18 @@
 import React from "react";
 
-const ServiceItem = ({ image, title, content, classNamePlus }) => {
+interface ServiceItemProps {
+  image: string;
+  title: string;
+  content: string;
+  classNamePlus: string;
+}
+
+const ServiceItem: React.FC<ServiceItemProps> = ({
+  image,
+  title,
+  content,
+  classNamePlus,
+}) => {
   return (
     <div
       className={`flex flex-col justify-center bg-[#222] text-white text-center px-10 h-[25rem] ${classNamePlus}`}
