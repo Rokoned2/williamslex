@@ -16,7 +16,7 @@ const ContactSection = () => {
             <p>Ciudad de Panamá, República de Panamá</p>
 
             <p className="my-4">Panamá: +51 999 999 999</p>
-            <p>info@williamslex.com</p>
+            <p>info@email.com</p>
           </div>
           <div>
             <div className="">

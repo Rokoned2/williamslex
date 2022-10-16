@@ -8,7 +8,7 @@ const listMenu = [
     link: "/",
   },
   {
-    name: "Inicio",
+    name: "Equipo",
     link: "/",
   },
   {
