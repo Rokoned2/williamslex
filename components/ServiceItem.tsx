@@ -4,7 +4,7 @@ interface ServiceItemProps {
   image: string;
   title: string;
   content: string;
-  classNamePlus: string;
+  classNamePlus?: string;
 }
 
 const ServiceItem: React.FC<ServiceItemProps> = ({
