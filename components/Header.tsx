@@ -25,7 +25,11 @@ const listMenu = [
   },
 ];
 
-const Header = () => {
+interface HeaderProps {
+  smallBgColor?: string;
+}
+
+const Header: React.FC<HeaderProps> = ({ smallBgColor }) => {
   const [overlay, setOverlay] = useState(false);
 
   const [fix, setFix] = useState(false);
@@ -47,9 +51,7 @@ const Header = () => {
     <>
       <nav
         className={`top-0 w-full z-10 flex items-center text-white pr-4 pl-12 sm:pr-12 fixed transition-colors ${
-          fix
-            ? "sm:bg-[#E11F25] bg-[#E11F25]"
-            : `bg-[#E11F25] sm:bg-transparent`
+          fix ? "sm:bg-[#E11F25] bg-[#E11F25]" : `bg-[#E11F25] ${smallBgColor}`
         }`}
       >
         <div
@@ -57,9 +59,11 @@ const Header = () => {
             fix ? "" : "sm:mt-5"
           } `}
         >
-          <h2 className="text-4xl font-bold font-roboto text-white">LOGO</h2>
+          <Link href="/">
+            <a className="text-4xl font-bold font-roboto text-white">LOGO</a>
+          </Link>
         </div>
-        <div className="text-[1.1rem] h-full flex ml-auto">
+        <div className="text-[1.1rem] h-full hidden sm:flex ml-auto">
           <p>+51 999 999 999 | legal@williamslex.com</p>
         </div>
         <div

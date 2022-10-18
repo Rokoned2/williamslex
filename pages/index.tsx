@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <title>Williams & Williams</title>
         <link rel="icon" href="/faviconV2.png" />
       </Head>
-      <Header />
+      <Header smallBgColor="sm:bg-[transparent]" />
       <VideoIntroductionSection />
       <main className="font-lato text-[1.05rem] leading-[1.4] text-[#444] ">
         <AboutSection />
