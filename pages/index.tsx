@@ -12,8 +12,8 @@ const Home: NextPage = () => {
   return (
     <div className="relative">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Williams & Williams</title>
+        <link rel="icon" href="/faviconV2.png" />
       </Head>
       <Header />
       <VideoIntroductionSection />

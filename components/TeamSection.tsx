@@ -65,7 +65,7 @@ const TeamSection = () => {
       >
         {team.map(({ image, name, title }, index) => (
           <SwiperSlide
-            className="flex flex-col text-center cursor-pointer "
+            className="flex flex-col text-center cursor-pointer mb-16"
             key={index}
           >
             <div className=" w-full flex-1">

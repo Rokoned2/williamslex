@@ -64,13 +64,15 @@ const Header = () => {
         </div>
         <div
           onClick={() => setOverlay(!overlay)}
-          className="self-start bg-[#222] ml-auto px-[0.6rem] h-20 flex group cursor-pointer"
+          className={`self-start bg-[#222] ml-auto px-[0.6rem] h-20 ${
+            fix ? "h-[3.9rem]" : ""
+          }  flex group cursor-pointer transition-all`}
         >
           <span className="relative">
             <div className="w-5 h-[2px]"></div>
-            <div className="w-5 h-[2px] bg-white absolute bottom-4 group-hover:bottom-[0.85rem] transition-all"></div>
+            <div className="w-5 h-[2px] bg-white absolute bottom-4 xl:group-hover:bottom-[0.95rem] transition-all"></div>
             <div className="w-5 h-[2px] bg-white absolute bottom-[1.4rem]"></div>
-            <div className="w-5 h-[2px] bg-white absolute bottom-[1.75rem] group-hover:bottom-[1.85rem] transition-all"></div>
+            <div className="w-5 h-[2px] bg-white absolute bottom-[1.75rem] xl:group-hover:bottom-[1.85rem] transition-all"></div>
           </span>
         </div>
       </nav>
