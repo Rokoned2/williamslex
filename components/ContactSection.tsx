@@ -9,14 +9,18 @@ const ContactSection = () => {
           <h4 className="font-roboto text-[#222] font-bold text-[1.375rem] mb-8">
             INFORMACIÓN DE CONTACTO
           </h4>
-          <h4 className="text-[#e21f26] mb-5 font-bold text-4xl">LOGO</h4>
+          <img
+            className="mb-8"
+            src="https://williamslex.com/wp-content/uploads/2018/09/Williams-logo-red.png"
+            alt=""
+          />
           <div className="text-[1.125rem]">
             <p>Vía Israel, P.H. Street Mall,</p>
             <p>Piso 5, Oficina 522</p>
             <p>Ciudad de Panamá, República de Panamá</p>
 
-            <p className="my-4">Panamá: +51 999 999 999</p>
-            <p>info@email.com</p>
+            <p className="my-4">Número: +51 926 819 555</p>
+            <p>info@williamlex.com</p>
           </div>
           <div>
             <div className="">

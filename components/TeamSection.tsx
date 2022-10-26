@@ -35,7 +35,9 @@ const team = [
     title: "Abogada",
   },
   {
-    image: "https://williamslex.com/maria-de-lourdes-ellero/",
+    link: "https://williamslex.com/maria-de-lourdes-ellero/",
+    image:
+      "https://williamslex.com/wp-content/uploads/2018/09/profile-cN-MaLourdes.jpg",
     name: "MARÍA DE LOURDES ELLERO",
     title: "Asesora en Derecho de Familia",
   },

@@ -69,7 +69,7 @@ const Header: React.FC<HeaderProps> = ({ smallBgColor }) => {
           </a>
         </div>
         <div className="text-[1.1rem] h-full hidden sm:flex ml-auto">
-          <p className="text-center">+51 999 999 999 | legal@williamslex.com</p>
+          <p className="text-center">+51 926 819 555 | legal@williamslex.com</p>
         </div>
         <div
           onClick={() => setOverlay(!overlay)}
@@ -110,12 +110,10 @@ const Header: React.FC<HeaderProps> = ({ smallBgColor }) => {
       >
         {listMenu.map(({ name, link }, index) => (
           <li className="w-full z-[70] mb-4" key={index}>
-            <Link href={`/${link}`}>
-              <a className="z-[90] relative pb-2 group">
-                {name}
-                <div className="absolute bottom-0 left-0 w-0 group-hover:w-full transition-all h-[1px] bg-white"></div>
-              </a>
-            </Link>
+            <a href={link} className="z-[90] relative pb-2 group">
+              {name}
+              <div className="absolute bottom-0 left-0 w-0 group-hover:w-full transition-all h-[1px] bg-white"></div>
+            </a>
           </li>
         ))}
       </ul>
