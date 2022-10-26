@@ -7,34 +7,37 @@ import { Autoplay, Navigation, Parallax, Pagination } from "swiper";
 
 const team = [
   {
+    link: "https://williamslex.com/yasser-williams/",
     image:
       "https://williamslex.com/wp-content/uploads/2018/09/profile-cN-YasserW.jpg",
-    name: "John Doe",
-    title: "Abogado Senior",
+    name: "Yasser Williams",
+    title: "Socio",
   },
   {
+    link: "https://williamslex.com/juan-carlos-williams/",
     image:
       "https://williamslex.com/wp-content/uploads/2018/09/profile-cN-JuanCarlosW-2.jpg",
-    name: "John Doe",
-    title: "Abogado Senior",
+    name: "Roberto Carlo",
+    title: "Socio",
   },
   {
+    link: "https://williamslex.com/yulissa-williams/",
     image:
       "https://williamslex.com/wp-content/uploads/2018/09/profH-crop-N-YulissaW-2.jpg",
-    name: "John Doe",
-    title: "Abogado Senior",
+    name: "Kate Saenz",
+    title: "Abogada Senior",
   },
   {
+    link: "https://williamslex.com/veronica-castillo-rojas/",
     image:
       "https://williamslex.com/wp-content/uploads/2018/09/profH-crop-N-Veronica.jpg",
-    name: "John Doe",
-    title: "Abogado Senior",
+    name: "Verónica Castillo Rojas",
+    title: "Abogada",
   },
   {
-    image:
-      "https://williamslex.com/wp-content/uploads/2018/09/profH-crop-N-MaLourdes.jpg",
-    name: "John Doe",
-    title: "Abogado Senior",
+    image: "https://williamslex.com/maria-de-lourdes-ellero/",
+    name: "MARÍA DE LOURDES ELLERO",
+    title: "Asesora en Derecho de Familia",
   },
 ];
 
@@ -58,32 +61,48 @@ const TeamSection = () => {
         navigation={{ prevEl, nextEl }}
         speed={2000}
         parallax={true}
-        slidesPerView={3}
+        slidesPerView={"auto"}
         spaceBetween={30}
         pagination={true}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          668: {
+            slidesPerView: 2,
+            // spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 3,
+            // spaceBetween: 30,
+          },
+        }}
         modules={[Autoplay, Navigation, Parallax, Pagination]}
       >
-        {team.map(({ image, name, title }, index) => (
+        {team.map(({ image, name, title, link }, index) => (
           <SwiperSlide
             className="flex flex-col text-center cursor-pointer mb-16"
             key={index}
           >
-            <div className=" w-full flex-1">
-              {image ? (
-                <img className="object-cover w-full" src={image} alt="" />
-              ) : (
-                <img
-                  className="object-cover w-full"
-                  src="https://pvrklaw.com/wp-content/uploads/2019/01/man-dummy.jpg"
-                  alt=""
-                />
-              )}
-              <div></div>
-            </div>
-            <h5 className="tracking-[0.2rem] uppercase font-roboto font-bold mt-4 mb-2 text-[1rem]">
-              {name}
-            </h5>
-            <h5 className="font-roboto text-md text-[1rem]">{title}</h5>
+            <a href={link}>
+              <div className=" w-full flex-1">
+                {image ? (
+                  <img className="object-cover w-full" src={image} alt="" />
+                ) : (
+                  <img
+                    className="object-cover w-full"
+                    src="https://pvrklaw.com/wp-content/uploads/2019/01/man-dummy.jpg"
+                    alt=""
+                  />
+                )}
+                <div></div>
+              </div>
+              <h5 className="tracking-[0.2rem] uppercase font-roboto font-bold mt-4 mb-2 text-[1rem]">
+                {name}
+              </h5>
+              <h5 className="font-roboto text-md text-[1rem]">{title}</h5>
+            </a>
           </SwiperSlide>
         ))}
       </Swiper>

@@ -2,19 +2,19 @@ import React from "react";
 import ServicesItem from "./ServiceItem";
 
 const practiceAreas = [
-  { name: "Foreign Investment and International Trade", link: "/" },
-  { name: "Foreign Investment and International Trade", link: "/" },
-  { name: "Foreign Investment and International Trade", link: "/" },
-  { name: "Foreign Investment and International Trade", link: "/" },
-  { name: "Foreign Investment and International Trade", link: "/" },
-  { name: "Foreign Investment and International Trade", link: "/" },
-  { name: "Foreign Investment and International Trade", link: "/" },
-  { name: "Foreign Investment and International Trade", link: "/" },
-  { name: "Foreign Investment and International Trade", link: "/" },
-  { name: "Foreign Investment and International Trade", link: "/" },
-  { name: "Foreign Investment and International Trade", link: "/" },
-  { name: "Foreign Investment and International Trade", link: "/" },
-  { name: "Foreign Investment and International Trade", link: "/" },
+  { name: "Inversión Extranjera y Comercio Internacional", link: "/" },
+  { name: "Derecho Inmobiliario y Bienes Raíces", link: "/" },
+  { name: "Derecho Ambiental", link: "/" },
+  { name: "Derecho Financiero, Bancario y Valores", link: "/" },
+  { name: "Propiedad Intelectual y Registros Sanitarios", link: "/" },
+  { name: "Litigación y Arbitrajes", link: "/" },
+  { name: "Derecho Laboral", link: "/" },
+  { name: "Derecho Corporativo", link: "/" },
+  { name: "Derecho Comercial", link: "/" },
+  { name: "Derecho Tributario", link: "/" },
+  { name: "Migración y Naturalización", link: "/" },
+  { name: "Contratación Pública", link: "/" },
+  { name: "Planificación Patrimonial y Sucesoria", link: "/" },
 ];
 
 const ServicesSection = () => {
@@ -53,41 +53,40 @@ const ServicesSection = () => {
               "Buscamos soluciones originales a través de diversos enfoques, innovadores o no tan obvios , lo que solo se logra con un conocimiento profundo de las leyes y su entorno comercial."
             }
             classNamePlus={
-              "sm:border-r-[1px] border-b-[1px] border-neutral-700				"
+              "flex-1 sm:border-r-[1px] border-b-[1px] border-neutral-700				"
             }
           />
           <ServicesItem
             image={
-              "https://williamslex.com/wp-content/uploads/2018/09/icon-w-agilidad.png"
+              "https://williamslex.com/wp-content/uploads/2018/09/icon-w-prioridad.png"
             }
-            title={"AGILIDAD Y CREATIVIDAD"}
+            title={"PRIORIZAMOS"}
             content={
-              "Buscamos soluciones originales a través de diversos enfoques, innovadores o no tan obvios , lo que solo se logra con un conocimiento profundo de las leyes y su entorno comercial."
+              "Nuestros clientes son la prioridad, por ello siempre respondemos a sus necesidades y presiones, y nos mantenemos accesibles por distintos medios."
             }
-            classNamePlus={"border-b-[1px] border-neutral-700	"}
+            classNamePlus={"flex-1 border-b-[1px] border-neutral-700	"}
           />
         </div>
         <div className="flex flex-col sm:flex-row">
           <ServicesItem
             image={
-              "https://williamslex.com/wp-content/uploads/2018/09/icon-w-agilidad.png"
+              "https://williamslex.com/wp-content/uploads/2018/09/icon-w-relaciones.png"
             }
-            title={"AGILIDAD Y CREATIVIDAD"}
-            content={
-              "Buscamos soluciones originales a través de diversos enfoques, innovadores o no tan obvios , lo que solo se logra con un conocimiento profundo de las leyes y su entorno comercial."
-            }
+            title={"CONSTRUIMOS RELACIONES DURADERAS  "}
+            content={"Vemos sus problemas inmediatos y prevemos a largo plazo."}
             classNamePlus={
-              "sm:border-r-[1px] border-b-[1px] sm:border-b-0 border-neutral-700				"
+              "flex-1 sm:border-r-[1px] border-b-[1px] sm:border-b-0 border-neutral-700				"
             }
           />
           <ServicesItem
             image={
-              "https://williamslex.com/wp-content/uploads/2018/09/icon-w-agilidad.png"
+              "https://williamslex.com/wp-content/uploads/2018/09/icon-w-perspectiva.png"
             }
-            title={"AGILIDAD Y CREATIVIDAD"}
+            title={"PERSPECTIVA INTERNACIONAL CON UN ENFOQUE LOCAL"}
             content={
-              "Buscamos soluciones originales a través de diversos enfoques, innovadores o no tan obvios , lo que solo se logra con un conocimiento profundo de las leyes y su entorno comercial."
+              "Aplicamos nuestro conocimiento de las grandes empresas internacionales con una visión local para ayudar a resolver los desafíos de su negocio."
             }
+            classNamePlus={"flex-1"}
           />
         </div>
       </div>

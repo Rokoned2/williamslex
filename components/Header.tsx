@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { IoClose } from "react-icons/io5";
+import logo from "../images/Williams-logo-N2a.png";
+import Image from "next/image";
 
 const listMenu = [
   {
@@ -8,19 +10,19 @@ const listMenu = [
     link: "/",
   },
   {
-    name: "Equipo",
+    name: "ÁREAS DE PRÁCTICA",
+    link: "https://williamslex.com/areas-de-practica/",
+  },
+  {
+    name: "EQUIPO",
+    link: "https://williamslex.com/equipo/",
+  },
+  {
+    name: "LA FIRMA",
     link: "/",
   },
   {
-    name: "Inicio",
-    link: "/",
-  },
-  {
-    name: "Inicio",
-    link: "/",
-  },
-  {
-    name: "Contacto",
+    name: "CONTACTO",
     link: "/contact",
   },
 ];
@@ -50,21 +52,24 @@ const Header: React.FC<HeaderProps> = ({ smallBgColor }) => {
   return (
     <>
       <nav
-        className={`top-0 w-full z-10 flex items-center text-white pr-4 pl-12 sm:pr-12 fixed transition-colors ${
+        className={`top-0 w-full z-10 flex items-center text-white pr-4 px-4 md:px-12 fixed transition-colors ${
           fix ? "sm:bg-[#E11F25] bg-[#E11F25]" : `bg-[#E11F25] ${smallBgColor}`
         }`}
       >
         <div
-          className={`bg-[#E11F25] h-20 flex items-center pl-0 sm:pl-10 pr-10 transition-all ${
+          className={`bg-[#E11F25] h-20 flex items-center pl-0  transition-all ${
             fix ? "" : "sm:mt-5"
           } `}
         >
-          <Link href="/">
-            <a className="text-4xl font-bold font-roboto text-white">LOGO</a>
-          </Link>
+          <a href="/">
+            <div className="w-[16.875rem]">
+              <Image src={logo} alt="" />
+            </div>
+            {/* <a className="text-4xl font-bold font-roboto text-white">LOGO</a> */}
+          </a>
         </div>
         <div className="text-[1.1rem] h-full hidden sm:flex ml-auto">
-          <p>+51 999 999 999 | legal@williamslex.com</p>
+          <p className="text-center">+51 999 999 999 | legal@williamslex.com</p>
         </div>
         <div
           onClick={() => setOverlay(!overlay)}
